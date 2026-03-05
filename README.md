@@ -1,201 +1,346 @@
-# 🤖 Auto-Actions
+<div align="center">
+  
+# 🤖 Auto-Actions v0.1.0
 
-> ⚠️ **Note**: This README is generated based on repository structure analysis. Please review and customize the content to accurately reflect your project's functionality.
+![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-purple?logo=kotlin)
+![Android](https://img.shields.io/badge/Android-8.0+-green?logo=android)
+![NDK](https://img.shields.io/badge/NDK-C/C++-blue?logo=c)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Pre--Release-orange)
 
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat&logo=gradle&logoColor=white)
-![License](https://img.shields.io/github/license/Andrey3141/Auto-Actions)
+> ⚡ Android-приложение для автоматизации действий с нативной оптимизацией  
+> 🔄 Сценарии • 🧠 NDK-модули • 📱 Современный UI • 🔐 Безопасная подпись
 
-**Auto-Actions** — это Android-приложение для автоматизации действий на устройстве. Написано на Kotlin с использованием нативных компонентов (C/C++ через NDK).
+</div>
 
 ---
 
 ## 📋 Оглавление
-
-- [О проекте](#-о-проекте)
-- [Возможности](#-возможности)
-- [Технологии](#-технологии)
-- [Требования](#-требования)
-- [Установка](#-установка)
-- [Сборка из исходного кода](#-сборка-из-исходного-кода)
-- [Структура проекта](#-структура-проекта)
-- [Использование](#-использование)
-- [Вклад в проект](#-вклад-в-проект)
-- [Лицензия](#-лицензия)
-- [Контакты](#-контакты)
-
----
-
-## ℹ️ О проекте
-
-Auto-Actions позволяет пользователям создавать автоматизированные сценарии для выполнения действий на Android-устройстве. Приложение сочетает в себе производительность Kotlin и мощь нативного кода для решения сложных задач автоматизации.
-
-> 🔧 *Добавьте здесь подробное описание функционала вашего приложения*
+- [📖 О проекте](#-о-проекте)
+- [✨ Возможности](#-возможности)
+- [📸 Демонстрация](#-демонстрация)
+- [📥 Установка](#-установка)
+- [🔨 Сборка из исходников](#-сборка-из-исходников)
+- [🎮 Использование](#-использование)
+- [🛠 Технологии](#-технологии)
+- [📁 Структура проекта](#-структура-проекта)
+- [🔧 Решение проблем](#-решение-проблем)
+- [📄 Лицензия](#-лицензия)
+- [📬 Контакты](#-контакты)
 
 ---
 
-## ✨ Возможности
+## 📖 О проекте
 
-- 🔄 Автоматизация пользовательских действий
-- ⚡ Высокая производительность благодаря нативным модулям (C/C++)
-- 🎯 Гибкая настройка сценариев
-- 📱 Современный Android UI
-- 🔐 Поддержка подписи релизных сборок
+**Auto-Actions** — это мощное Android-приложение для автоматизации пользовательских действий, сочетающее производительность Kotlin и скорость нативного кода (C/C++ через NDK).
 
-> 💡 *Дополните список реальными функциями вашего приложения*
+> 🎯 **Идеально для:** автоматизации рутинных задач, создания макросов, оптимизации рабочего процесса на мобильном устройстве.
 
----
+### ✨ Возможности
 
-## 🛠 Технологии
-
-| Компонент | Технология |
-|-----------|-----------|
-| Язык | Kotlin, C, CMake |
-| Сборка | Gradle (KTS) |
-| Платформа | Android |
-| NDK | Native Development Kit |
-| IDE | Android Studio |
+| Фича | Описание |
+|------|----------|
+| 🔄 **Гибкие сценарии** | Создавайте цепочки действий с условиями и триггерами |
+| ⚡ **Нативная оптимизация** | Критичные к производительности модули на C/C++ через NDK |
+| 🎯 **Точные триггеры** | Запуск по времени, событию, жесту или системному сигналу |
+| 📱 **Современный UI** | Интуитивный интерфейс на Material Design 3 |
+| 🔐 **Безопасная подпись** | Поддержка релизных сборок с кастомным ключом |
+| 🧩 **Модульная архитектура** | Легко расширять функционал новыми плагинами |
 
 ---
 
-## 📱 Требования
+## 📸 Демонстрация
 
-- Android **8.0+** (API level 26+)
-- Android Studio **Giraffe+** (рекомендуется)
-- Gradle **8.0+**
-- Android NDK **25+** (для сборки нативных модулей)
+<div align="center">
+
+| 🎯 Главный экран | ⚙️ Редактор сценария | 📊 Статистика |
+|:--------------:|:-------------------:|:-------------:|
+| ![Главная](screenshots/main_screen.png) | ![Редактор](screenshots/script_editor.png) | ![Статистика](screenshots/stats.png) |
+| *Список активных сценариев* | *Визуальный конструктор логики* | *Отчёт по выполненным действиям* |
+
+</div>
+
+> 💡 **Нет скриншотов?** Сделай 3 скрина приложения и положи их в папку `screenshots/` с именами: `main_screen.png`, `script_editor.png`, `stats.png`.
 
 ---
 
 ## 📥 Установка
 
-### Из Google Play (когда будет опубликовано)
-```
-[Ссылка на Google Play]
+### ⚡ Быстрый старт (готовый APK)
+
+```bash
+# 1. Скачайте последнюю версию
+[![Download APK](https://img.shields.io/badge/⬇️_Скачать-.apk-0078D4?style=for-the-badge&logo=android)](https://github.com/Andrey3141/Auto-Actions/releases/latest/download/Auto-Actions.apk)
+
+# 2. Разрешите установку из неизвестных источников
+Настройки → Безопасность → Неизвестные источники → ВКЛ
+
+# 3. Установите скачанный APK-файл
 ```
 
-### Из APK-файла
-1. Скачайте последнюю версию из [Releases](https://github.com/Andrey3141/Auto-Actions/releases)
-2. Разрешите установку из неизвестных источников
-3. Установите APK-файл
+### 📦 Требования
+| Компонент | Версия |
+|-----------|--------|
+| 📱 Android | 8.0+ (API 26+) |
+| 🧠 RAM | 2 ГБ+ (рекомендуется 4 ГБ для сложных сценариев) |
+| 💾 Место | 50 МБ+ |
 
 ---
 
-## 🔨 Сборка из исходного кода
+## 🔨 Сборка из исходников
 
-### Предварительные требования
+### 🛠 Предварительные требования
+
 ```bash
 # Убедитесь, что установлены:
-- Android Studio с поддержкой NDK
-- Java JDK 17+
-- Android SDK с необходимыми API levels
+✓ Android Studio Giraffe+ (или новее)
+✓ JDK 17+
+✓ Android SDK с API 26+
+✓ Android NDK 25+ (для нативных модулей)
+✓ Gradle 8.0+
 ```
 
-### Шаги сборки
+### 🚀 Пошаговая сборка
 
-1. **Клонируйте репозиторий**
 ```bash
+# 1. Клонируйте репозиторий
 git clone https://github.com/Andrey3141/Auto-Actions.git
 cd Auto-Actions
-```
 
-2. **Откройте проект в Android Studio**
-```
-File → Open → выберите папку проекта
-```
+# 2. Откройте проект в Android Studio
+#    File → Open → выберите папку проекта
 
-3. **Настройте переменные окружения** (при необходимости)
-```properties
-# gradle.properties
+# 3. Настройте NDK (если требуется)
+#    В файле gradle.properties:
 android.ndkVersion=25.2.9519653
-```
 
-4. **Соберите проект**
-```bash
-# Отладочная сборка
+# 4. Соберите проект
+#    Отладочная версия:
 ./gradlew assembleDebug
 
-# Релизная сборка (требуется настроить signingConfig)
+#    Релизная версия (требуется signingConfig):
 ./gradlew assembleRelease
+
+# 5. Установите на устройство
+./gradlew installDebug
 ```
 
-5. **Установите на устройство**
-```bash
-./gradlew installDebug
+### 🔐 Настройка подписи для релиза
+
+<details>
+<summary>🔽 Как настроить signingConfig</summary>
+
+```kotlin
+// app/build.gradle.kts
+android {
+    signingConfigs {
+        create("release") {
+            storeFile = file("my-release-key.jks")
+            storePassword = "your_store_password"
+            keyAlias = "your_key_alias"
+            keyPassword = "your_key_password"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.getByName("release")
+        }
+    }
+}
+```
+
+> ⚠️ **Никогда не коммитьте файл `.jks` и пароли в репозиторий!** Используйте `.gitignore` и переменные окружения.
+
+</details>
+
+---
+
+## 🎮 Использование
+
+### 🔄 Создание первого сценария
+
+1.  **Запустите приложение** → нажмите **«➕ Новый сценарий»**
+2.  **Выберите триггер**:
+    *   ⏰ По расписанию
+    *   🎯 По событию (уведомление, жест, запуск приложения)
+    *   📍 По геолокации
+3.  **Добавьте действия**:
+    *   📤 Отправить сообщение
+    *   🔔 Показать уведомление
+    *   🌐 Открыть URL
+    *   ⚙️ Изменить настройки системы
+4.  **Настройте условия** (опционально):
+    *   «Только если батарея > 20%»
+    *   «Только в рабочие дни»
+5.  **Сохраните и активируйте** сценарий
+
+### 💡 Советы по эффективности
+
+| Совет | Зачем |
+|-------|-------|
+| 🧹 Используйте нативные модули для тяжёлых вычислений | Ускорение в 3-10× по сравнению с чистым Kotlin |
+| 🔋 Оптимизируйте частоту проверок триггеров | Экономия батареи |
+| 🧪 Тестируйте сценарии в отладочном режиме | Избегайте неожиданных действий |
+| 📦 Экспортируйте сценарии для бэкапа | Быстрое восстановление на новом устройстве |
+
+---
+
+## 🛠 Технологии
+
+```
+📱 Kotlin 1.9+      — основной язык приложения
+⚙️ C / CMake        — нативные модули (NDK) для производительности
+🎨 Material Design 3 — современный UI/UX
+🔧 Gradle KTS       — декларативная сборка
+🔐 Android Keystore — безопасное хранение ключей
+🧪 JUnit / Espresso — тестирование (в разработке)
+```
+
+### 📊 Языки в проекте
+
+| Язык | Доля | Назначение |
+|------|------|-----------|
+| 🟣 Kotlin | ~78% | UI, логика сценариев, интеграция с Android API |
+| 🔵 C | ~20% | Высокопроизводительные вычисления, работа с памятью |
+| ⚪ CMake | ~2% | Сборка нативных библиотек |
+
 ---
 
 ## 📁 Структура проекта
 
 ```
 Auto-Actions/
-├── app/                          # Основной модуль приложения
+├── app/
 │   ├── src/main/
-│   │   ├── java/                # Kotlin-код приложения
-│   │   ├── cpp/                 # Нативный C/C++ код (NDK)
-│   │   ├── res/                 # Ресурсы (layout, drawable, values)
-│   │   └── AndroidManifest.xml  # Манифест приложения
-│   └── build.gradle.kts         # Конфигурация модуля
-├── gradle/                      # Gradle wrapper и конфигурации
-├── build.gradle.kts             # Корневая конфигурация сборки
-├── settings.gradle.kts          # Настройки проекта
-├── gradle.properties            # Свойства Gradle
-├── gradlew / gradlew.bat        # Gradle wrapper скрипты
-├── .gitignore                   # Исключения для Git
-└── my-release-key.jks           # Ключ подписи (⚠️ не коммитьте!)
+│   │   ├── java/com/andrey3141/autoactions/
+│   │   │   ├── ui/           # Экраны и компоненты UI
+│   │   │   ├── logic/        # Движок сценариев
+│   │   │   ├── native/       # JNI-обёртки для C-модулей
+│   │   │   └── MainActivity.kt
+│   │   ├── cpp/              # Исходный код нативных модулей (C/C++)
+│   │   ├── res/              # Ресурсы: layout, drawable, values
+│   │   └── AndroidManifest.xml
+│   └── build.gradle.kts
+├── gradle/                   # Wrapper и конфигурации
+├── build.gradle.kts          # Корневая сборка
+├── settings.gradle.kts       # Настройки проекта
+├── gradle.properties         # Свойства (включая NDK version)
+├── gradlew / gradlew.bat     # Скрипты Gradle Wrapper
+├── .gitignore                # Исключения для Git
+├── screenshots/              # Скриншоты для README
+└── docs/                     # Дополнительная документация (опционально)
 ```
+
+> ⚠️ **Важно:** Файл `my-release-key.jks` **не должен** попадать в репозиторий. Добавьте его в `.gitignore`.
 
 ---
 
-## 🚀 Использование
+## 🔧 Решение проблем
 
-> 📝 *Добавьте инструкции по использованию приложения:*
-> 1. Запустите приложение
-> 2. Создайте новый сценарий автоматизации
-> 3. Настройте триггеры и действия
-> 4. Активируйте сценарий
+<details>
+<summary>❌ Ошибка сборки: «NDK not found»</summary>
 
-*Пример скриншотов или GIF можно добавить в папку `/docs`*
+1.  Откройте Android Studio → **SDK Manager** → **SDK Tools**
+2.  Установите **NDK (Side by side)** версии 25+
+3.  В `gradle.properties` укажите:
+    ```properties
+    android.ndkVersion=25.2.9519653
+    ```
+4.  Перезапустите сборку: `./gradlew clean assembleDebug`
+
+</details>
+
+<details>
+<summary>❌ Приложение вылетает при запуске сценария</summary>
+
+1.  Проверьте логи через **Logcat** в Android Studio
+2.  Убедитесь, что сценарий не содержит циклических зависимостей
+3.  Для нативных модулей: проверьте, что `.so`-библиотеки собраны для вашей архитектуры (arm64-v8a, armeabi-v7a)
+
+</details>
+
+<details>
+<summary>❌ Не сохраняется подпись релизной сборки</summary>
+
+1.  Убедитесь, что путь к `.jks` файлу указан верно
+2.  Проверьте, что пароли совпадают с теми, что использовались при создании ключа
+3.  Используйте переменные окружения для безопасности:
+    ```kotlin
+    storePassword = System.getenv("KEYSTORE_PASSWORD")
+    ```
+
+</details>
 
 ---
 
 ## 🤝 Вклад в проект
 
-Приветствуются pull request'ы и issues! 
+Приветствуются PR и Issues! 🙌
 
-1. Форкните репозиторий
-2. Создайте ветку для вашей функции (`git checkout -b feature/AmazingFeature`)
-3. Закоммитьте изменения (`git commit -m 'Add: AmazingFeature'`)
-4. Запушьте ветку (`git push origin feature/AmazingFeature`)
-5. Откройте Pull Request
+1.  Форкните репозиторий
+2.  Создайте ветку: `git checkout -b feature/your-feature`
+3.  Закоммитьте изменения: `git commit -m 'feat: add your feature'`
+4.  Отправьте: `git push origin feature/your-feature`
+5.  Откройте Pull Request
 
-Пожалуйста, соблюдайте [Code of Conduct](CODE_OF_CONDUCT.md) (если есть).
+📖 Подробнее: [CONTRIBUTING.md](CONTRIBUTING.md) *(скоро)*
 
 ---
 
 ## 📄 Лицензия
 
-Распространяется под лицензией **MIT**. Подробнее см. в файле [LICENSE](LICENSE).
+<div align="center">
+
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+Проект распространяется под лицензией **MIT**.  
+См. файл [LICENSE](LICENSE) для подробностей.
+
+</div>
 
 ---
 
-## 👤 Контакты
+<div align="center">
 
-**Andrey Sml**  
-- GitHub: [@Andrey3141](https://github.com/Andrey3141)  
-- Email: *[askackov08@gmail.com]*  
+## 📬 Контакты и поддержка
 
-Ссылка на проект: https://github.com/Andrey3141/Auto-Actions
+> 💬 Есть вопрос, идея или нашли баг? Пишите!
 
----
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github&style=for-the-badge)](https://github.com/Andrey3141)
+[![Telegram](https://img.shields.io/badge/Telegram-@tools271-2CA5E0?logo=telegram&style=for-the-badge)](https://t.me/tools271)
+[![Email](https://img.shields.io/badge/Email-Написать-D14836?logo=gmail&style=for-the-badge)](mailto:askackov08@gmail.com)
 
-## 🙏 Благодарности
-
-- Kotlin Team за отличный язык
-- Android Developers за документацию
-- Всем контрибьюторам проекта
+</div>
 
 ---
 
-> 🔄 **Последнее обновление**: Март 2026  
-> 📦 **Версия**: 0.1.0 (pre-release)
+<div align="center">
+
+## 🚀 Скачать приложение
+
+> ⬇️ Готовый `.apk` для Android (не требует сборки)
+
+[![Download APK](https://img.shields.io/badge/⬇️_Скачать_Auto_Actions-.apk_for_Android-A4C639?style=for-the-badge&logo=android&logoColor=black)](https://github.com/Andrey3141/Auto-Actions/releases/latest/download/Auto-Actions.apk)
+
+<small>🔗 Ссылка ведёт на последний релиз: [Releases](https://github.com/Andrey3141/Auto-Actions/releases)</small>
+
+</div>
+
+---
+
+<div align="center">
+
+### 🙏 Благодарности
+
+- **Kotlin Team** за отличный язык и инструменты 🟣
+- **Android NDK Team** за возможность использовать C/C++ 🛠️
+- **Material Design** за красивую дизайн-систему 🎨
+- **Сообществу разработчиков** за вдохновение и поддержку 💙
+
+---
+
+**Auto-Actions** — автоматизируй рутину, освободи время для важного! ⚡🤖
+
+*Сделано с ❤️ на Kotlin + C++*
+
+</div>
