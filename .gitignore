@@ -1,15 +1,151 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ============================================================
+# 🤖 Auto-Actions — .gitignore
+# Android + Kotlin + NDK (C/C++) + CMake
+# ============================================================
+
+# === 🔐 СЕКРЕТЫ И КОНФИГИ (никогда не коммить!) ===
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+*.password
+*.secret
+.env
 local.properties
+secrets.xml
+google-services.json
+
+# === 📦 СБОРКА И БИНАРНИКИ ===
+# APK / AAB файлы (артефакты сборки)
+*.apk
+*.ap_
+*.aab
+*.aab.pro
+
+# Временные файлы сборки
+*.dex
+*.class
+*.bin
+*.idc
+
+# Артефакты ProGuard / R8
+/proguard/
+*.pro
+*.mapping.txt
+*.txt
+
+# === 🗂️ GRADLE И BUILD ===
+# Папки сборки
+/build/
+*/build/
+app/build/
+.intermediate/
+captures/
+outputs/
+
+# Gradle cache и логи
+/.gradle/
+gradle-app.setting
+*.log
+
+# Kotlin compilation
+.kotlin/
+*.kotlin_module
+*.kotlin_builtins
+
+# === ⚙️ NDK / CMAKE / NATIVE ===
+# Артефакты CMake
+.cmake/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# Объектные файлы и библиотеки
+*.o
+*.a
+*.so
+*.so.*
+
+# Папки NDK сборки
+.externalNativeBuild/
+.ndk/
+obj/
+libs/armeabi*/
+libs/x86*/
+libs/mips*/
+
+# Временные файлы компиляции
+*.gcno
+*.gcda
+*.gcov
+
+# === 📱 ANDROID STUDIO / IDE ===
+# Пользовательские настройки (не нужны в репо)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Локальные настройки Android Studio
+*.androidstudio
+.local/
+*.swp
+*.swo
+*~
+
+# === 🖥️ СИСТЕМНЫЕ ФАЙЛЫ ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# === 🧪 ТЕСТЫ И ОТЧЁТЫ ===
+# Покрытия и отчёты (если генерируются)
+/coverage/
+*.lcov
+*.exec
+jacoco/
+
+# Логи эмулятора
+*.hprof
+
+# === 📸 СКРИНШОТЫ И МЕДИА (опционально) ===
+# Если скриншоты большие — игнорируй, если маленькие — оставь
+# /screenshots/*.png
+# /screenshots/*.gif
+
+# === 🗑️ ВРЕМЕННОЕ И МУСОР ===
+# Резервные копии
+*.bak
+*.old
+*.orig
+*.rej
+
+# Файлы от разных редакторов
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# ============================================================
+# ✅ ЧТО ОСТАВЛЯЕМ В РЕПО (для справки):
+# ✅ Исходный код: *.kt, *.java, *.c, *.h, *.xml
+# ✅ Сборка: CMakeLists.txt, build.gradle.kts, settings.gradle.kts
+# ✅ Документация: README.md, LICENSE, CONTRIBUTING.md
+# ✅ Ресурсы: res/, drawable/, layout/, values/
+# ✅ Gradle wrapper: gradlew, gradlew.bat, gradle/wrapper/
+# ============================================================
