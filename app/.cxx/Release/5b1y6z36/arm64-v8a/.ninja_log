@@ -1,0 +1,15 @@
+# ninja log v5
+1	15	1772373609613020577	CMakeFiles/information.dir/call_helper.cpp.o	a84c64ed7c76141e
+1	15	1772373609613020577	CMakeFiles/information.dir/telegram_helper.cpp.o	f15326d67c0ea437
+1	15	1772373609618065413	CMakeFiles/information.dir/sms_helper.cpp.o	9c10a9786fa7cc29
+0	36	1772373609637020684	CMakeFiles/information.dir/main.cpp.o	633b5bc8947be8be
+0	55	1772373609641020701	CMakeFiles/information.dir/phone_formatter.cpp.o	f3b02c09ce657202
+56	125	1772373609721021058	/home/lenovo/AndroidStudioProjects/Information/app/build/intermediates/cxx/Release/5b1y6z36/obj/arm64-v8a/libinformation.so	e65c350beeb858d7
+0	3	0	clean	b9479693277a3051
+0	3	0	clean	b9479693277a3051
+1	14	1772373668453293096	CMakeFiles/information.dir/sms_helper.cpp.o	9c10a9786fa7cc29
+1	14	1772373668453293096	CMakeFiles/information.dir/call_helper.cpp.o	a84c64ed7c76141e
+0	15	1772373668453293096	CMakeFiles/information.dir/telegram_helper.cpp.o	f15326d67c0ea437
+0	27	1772373668469293173	CMakeFiles/information.dir/main.cpp.o	633b5bc8947be8be
+0	31	1772373668473293192	CMakeFiles/information.dir/phone_formatter.cpp.o	f3b02c09ce657202
+31	71	1772373668509293365	/home/lenovo/AndroidStudioProjects/Information/app/build/intermediates/cxx/Release/5b1y6z36/obj/arm64-v8a/libinformation.so	e65c350beeb858d7

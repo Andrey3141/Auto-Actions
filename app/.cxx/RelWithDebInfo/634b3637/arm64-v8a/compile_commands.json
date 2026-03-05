@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/lenovo/AndroidStudioProjects/Information/app/.cxx/RelWithDebInfo/634b3637/arm64-v8a",
+  "command": "/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dinformation_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -O2 -g -DNDEBUG -fPIC -o CMakeFiles/information.dir/main.cpp.o -c /home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/main.cpp",
+  "file": "/home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/main.cpp"
+},
+{
+  "directory": "/home/lenovo/AndroidStudioProjects/Information/app/.cxx/RelWithDebInfo/634b3637/arm64-v8a",
+  "command": "/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dinformation_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -O2 -g -DNDEBUG -fPIC -o CMakeFiles/information.dir/phone_formatter.cpp.o -c /home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/phone_formatter.cpp",
+  "file": "/home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/phone_formatter.cpp"
+},
+{
+  "directory": "/home/lenovo/AndroidStudioProjects/Information/app/.cxx/RelWithDebInfo/634b3637/arm64-v8a",
+  "command": "/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dinformation_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -O2 -g -DNDEBUG -fPIC -o CMakeFiles/information.dir/telegram_helper.cpp.o -c /home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/telegram_helper.cpp",
+  "file": "/home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/telegram_helper.cpp"
+},
+{
+  "directory": "/home/lenovo/AndroidStudioProjects/Information/app/.cxx/RelWithDebInfo/634b3637/arm64-v8a",
+  "command": "/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dinformation_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -O2 -g -DNDEBUG -fPIC -o CMakeFiles/information.dir/sms_helper.cpp.o -c /home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/sms_helper.cpp",
+  "file": "/home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/sms_helper.cpp"
+},
+{
+  "directory": "/home/lenovo/AndroidStudioProjects/Information/app/.cxx/RelWithDebInfo/634b3637/arm64-v8a",
+  "command": "/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/lenovo/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dinformation_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -Os -fno-rtti -fno-exceptions -fvisibility=hidden -fdata-sections -ffunction-sections -O2 -g -DNDEBUG -fPIC -o CMakeFiles/information.dir/call_helper.cpp.o -c /home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/call_helper.cpp",
+  "file": "/home/lenovo/AndroidStudioProjects/Information/app/src/main/cpp/call_helper.cpp"
+}
+]

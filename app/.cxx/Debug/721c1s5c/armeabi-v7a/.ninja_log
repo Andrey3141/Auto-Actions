@@ -1,0 +1,7 @@
+# ninja log v5
+1	264	1772307577660630645	CMakeFiles/information.dir/phone_formatter.cpp.o	167b94574a1a473e
+1	279	1772307577672630765	CMakeFiles/information.dir/sms_helper.cpp.o	36e21ac2a321ede3
+4	296	1772307577692630963	CMakeFiles/information.dir/call_helper.cpp.o	4b6d25f6ccc3549e
+1	308	1772307577704631082	CMakeFiles/information.dir/telegram_helper.cpp.o	8049fdab984037d0
+1	417	1772307577812632154	CMakeFiles/information.dir/main.cpp.o	151531a82dfebe86
+417	438	1772307577840632432	/home/lenovo/AndroidStudioProjects/Information/app/build/intermediates/cxx/Debug/721c1s5c/obj/armeabi-v7a/libinformation.so	3b80543905fa1501
