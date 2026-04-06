@@ -1,55 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/customTextInputContainer">
+    android:clipChildren="false"
+    android:clipToPadding="false">
 
-    <!-- Иконка телефона слева -->
-    <ImageView
-        android:id="@+id/ivStartIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_phone"
-        android:tint="#6200EE"
-        android:layout_marginStart="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/etPhoneNumber"
-        app:layout_constraintStart_toStartOf="@+id/etPhoneNumber"
-        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber" />
-
-    <!-- EditText -->
-    <EditText
-        android:id="@+id/etPhoneNumber"
-        android:layout_width="0dp"
+    <RelativeLayout
+        android:id="@+id/boxBackground"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:maxLines="1"
-        android:textSize="16sp"
-        android:textColor="#212121"
-        android:textColorHint="#9E9E9E"
-        android:fontFamily="sans-serif"
-        android:text="+79161234567"
-        android:paddingStart="48dp"
-        android:paddingEnd="48dp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        android:background="@drawable/edit_text_bg_selector"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/textinput_outline_box">
 
-    <!-- Иконка очистки (крестик) -->
-    <ImageView
-        android:id="@+id/btnClear"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_close"
-        android:tint="#6200EE"
-        android:visibility="gone"
-        android:layout_marginEnd="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/etPhoneNumber"
-        app:layout_constraintEnd_toEndOf="@+id/etPhoneNumber"
-        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber" />
+        <ImageView
+            android:id="@+id/startIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_phone" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/endIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:visibility="gone"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/endIcon"
+            android:layout_toEndOf="@id/startIcon"
+            android:layout_centerVertical="true"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:background="@null"
+            android:text="+79161234567" />
+
+    </RelativeLayout>
+
+</FrameLayout>

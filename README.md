@@ -1,15 +1,16 @@
 <div align="center">
   
-# 🇧🇾 Auto-Actions v1.1.1
+# 🇧🇾 Auto-Actions v1.1.2
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-purple?logo=kotlin)
 ![Android](https://img.shields.io/badge/Android-8.0+-green?logo=android)
 ![NDK](https://img.shields.io/badge/NDK-C/C++-blue?logo=c)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Status-Alpha-orange)
+![Status](https://img.shields.io/badge/Status-Beta-green)
+![Size](https://img.shields.io/badge/Size-2.93MB-blue)
 
 > ⚡ Утилита для быстрой отправки геолокации, SMS и звонков на белорусские номера  
-> 🧠 Native C-оптимизация • 🔢 Валидация +375 • 📱 Material Design 3
+> 🧠 Native C-оптимизация • 🔢 Валидация +375 • 📱 Кастомный UI
 
 </div>
 
@@ -53,7 +54,7 @@
 | 💬 **Быстрые SMS** | Отправка шаблона сообщения в один клик |
 | 📞 **Умный дозвон** | Автоматический выбор установленного телефонного приложения (Dialer) |
 | ⚡ **Native C-ядро** | Форматирование и логика на C для максимальной производительности |
-| 🎨 **Анимированный UI** | Плавные переходы, пульсация кнопок, адаптивный дизайн |
+| 🎨 **Анимированный UI** | Плавные переходы, пульсация кнопок, полноэкранный режим |
 
 ---
 
@@ -162,7 +163,7 @@ cd Auto-Actions
 📱 Kotlin           — UI и логика Android (Activity, Permissions, Intents)
 ⚙️ C / JNI          — высокопроизводительная обработка строк и утилиты
 🔗 Telegram Deep Link — отправка геолокации без использования Bot API
-🎨 Material Design 3 — карточки, анимации, адаптивная верстка
+🎨 Кастомный UI — карточки, анимации, адаптивная верстка (без Material Components)
 🔧 CMake / NDK      — сборка нативных библиотек
 ```
 

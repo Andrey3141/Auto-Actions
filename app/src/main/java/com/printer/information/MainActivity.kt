@@ -18,9 +18,9 @@ import android.text.TextWatcher
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.AnimationUtils
-import android.view.animation.BounceInterpolator
 import android.widget.TextView
 import android.widget.Toast
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -28,9 +28,6 @@ import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.button.MaterialButton
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.textfield.TextInputEditText
 import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
@@ -38,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var locationManager: LocationManager
 
     // UI Elements
-    private lateinit var etPhoneNumber: TextInputEditText
+    private lateinit var etPhoneNumber: EditText  // Изменено с TextInputEditText на EditText
     private lateinit var cardLocation: CardView
     private lateinit var cardMessage: CardView
     private lateinit var cardCall: CardView
@@ -136,7 +133,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        etPhoneNumber = findViewById(R.id.etPhoneNumber)
+        val phoneInputView = findViewById<MaterialTextInputReplica>(R.id.phoneInput)
+        etPhoneNumber = phoneInputView.editText
         cardLocation = findViewById(R.id.cardLocation)
         cardMessage = findViewById(R.id.cardMessage)
         cardCall = findViewById(R.id.cardCall)
@@ -206,21 +204,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun animateButton(view: View) {
-        view.animate().scaleX(1f).scaleY(1f).setDuration(0).start() // сброс
+        view.animate().scaleX(1f).scaleY(1f).setDuration(0).start()
         view.animate().scaleX(0.95f).scaleY(0.95f).setDuration(100).withEndAction {
             view.animate().scaleX(1f).scaleY(1f).setDuration(100).start()
         }.start()
     }
 
     private fun animateFab() {
-        fab.animate().scaleX(1f).scaleY(1f).setDuration(0).start() // сброс
+        fab.animate().scaleX(1f).scaleY(1f).setDuration(0).start()
         fab.animate().scaleX(1.2f).scaleY(1.2f).setDuration(200).withEndAction {
             fab.animate().scaleX(1f).scaleY(1f).setDuration(200).start()
         }.start()
     }
 
     private fun animateRefresh() {
-        btnRefresh.animate().rotation(0f).setDuration(0).start() // сброс
+        btnRefresh.animate().rotation(0f).setDuration(0).start()
         btnRefresh.animate().rotation(360f).setDuration(500).start()
     }
 
@@ -245,13 +243,11 @@ class MainActivity : AppCompatActivity() {
 
                 val input = s?.toString() ?: ""
 
-                // Если пользователь сам ввел +, не форматируем
                 if (input.startsWith("+")) {
                     isFormatting = false
                     return
                 }
 
-                // Убираем все кроме цифр
                 val digits = input.replace(Regex("[^0-9]"), "")
 
                 if (digits.isNotEmpty()) {
@@ -259,7 +255,6 @@ class MainActivity : AppCompatActivity() {
                     if (formatted != input && !formatted.startsWith("+7")) {
                         s?.replace(0, s.length, formatted)
                     } else if (formatted.startsWith("+7") && digits.startsWith("375")) {
-                        // Если определили как РФ, но это РБ - пропускаем
                         isFormatting = false
                         return
                     }
