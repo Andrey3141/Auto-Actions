@@ -26,3 +26,11 @@
 2	21	1772392819094330372	CMakeFiles/information.dir/sms_helper.c.o	fb8c61065ba1c7ce
 1	35	1772392819103640473	CMakeFiles/information.dir/phone_formatter.c.o	583a7b70df062bfe
 35	74	1772392819146317883	/home/lenovo/AndroidStudioProjects/Information/app/build/intermediates/cxx/Release/5184r4h1/obj/arm64-v8a/libinformation.so	5bed467a2142d664
+0	2	0	clean	b9479693277a3051
+0	1	0	clean	b9479693277a3051
+1	46	1775498463320043351	CMakeFiles/information.dir/call_helper.c.o	ca0ff3c4178e6c51
+1	46	1775498463320043351	CMakeFiles/information.dir/telegram_helper.c.o	69156ab8c13fe306
+1	46	1775498463320043351	CMakeFiles/information.dir/sms_helper.c.o	fb8c61065ba1c7ce
+0	46	1775498463324285601	CMakeFiles/information.dir/main.c.o	134cb55bc73b2bd
+1	56	1775498463332043495	CMakeFiles/information.dir/phone_formatter.c.o	583a7b70df062bfe
+56	160	1775498463436044738	/home/lenovo/AndroidStudioProjects/Information/app/build/intermediates/cxx/Release/5184r4h1/obj/arm64-v8a/libinformation.so	5bed467a2142d664
